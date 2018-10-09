@@ -1,0 +1,90 @@
+﻿@model Proyect.Models.Tarea
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tarea</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Desarrollador.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desarrollador.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prioridad.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prioridad.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Proyecto.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proyecto.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.asunto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.asunto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cuerpo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cuerpo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaCreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaCreacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tiempoEstimado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tiempoEstimado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TareaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
